@@ -1,10 +1,10 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="clase1.list">
+
+    <record model="ir.ui.view" id="clase1a.list">
       <field name="name">clase1 list</field>
-      <field name="model">clase1.clase1</field>
+      <field name="model">clase1a.clase1a</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -13,20 +13,20 @@
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="clase1.action_window">
+
+    <record model="ir.actions.act_window" id="clase1a.action_window">
       <field name="name">clase1 window</field>
-      <field name="res_model">clase1.clase1</field>
+      <field name="res_model">clase1a.clase1a</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="clase1.action_server">
+
+    <record model="ir.actions.server" id="clase1a.action_server">
       <field name="name">clase1 server</field>
       <field name="model_id" ref="model_clase1_clase1"/>
       <field name="state">code</field>
@@ -38,23 +38,21 @@
         }
       </field>
     </record>
--->
+
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="clase1" id="clase1.menu_root"/>
--->
+
+    <menuitem name="clase1a" id="clase1a.menu_root"/>
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="clase1.menu_1" parent="clase1.menu_root"/>
-    <menuitem name="Menu 2" id="clase1.menu_2" parent="clase1.menu_root"/>
--->
+
+    <menuitem name="Menu 1" id="clase1a.menu_1" parent="clase1a.menu_root"/>
+    <menuitem name="Menu 2" id="clase1a.menu_2" parent="clase1a.menu_root"/>
+
     <!-- actions -->
-<!--
-    <menuitem name="List" id="clase1.menu_1_list" parent="clase1.menu_1"
-              action="clase1.action_window"/>
-    <menuitem name="Server to list" id="clase1" parent="clase1.menu_2"
-              action="clase1.action_server"/>
--->
+
+    <menuitem name="List" id="clase1a.menu_1_list" parent="clase1a.menu_1"
+              action="clase1a.action_window"/>
+    <menuitem name="Server to list" id="clase1a" parent="clase1a.menu_2"
+              action="clase1a.action_server"/>
   </data>
 </odoo>
